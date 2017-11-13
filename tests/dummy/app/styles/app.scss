@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.mdc-toolbar {
+  background-color: #000;
+}
+
+.mdc-toolbar__title {
+  background: no-repeat 0/32px url(images/mdc-logo.svg);
+  font-family: Roboto Mono;
+  font-weight: 400;
+  height: 24px;
+  padding: 2px 0 5px 50px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
