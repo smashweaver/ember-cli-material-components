@@ -1,11 +1,53 @@
-<h1 class="mdc-typography--display4">Display4</h1>
-<h1 class="mdc-typography--display3">Display3</h1>
-<h1 class="mdc-typography--display2">Display2</h1>
-<h1 class="mdc-typography--display1">Display1</h1>
+<main class="content">
+  <h1 class="mdc-typography--display4">Display4</h1>
+  <h1 class="mdc-typography--display3">Display3</h1>
+  <h1 class="mdc-typography--display2">Display2</h1>
+  <h1 class="mdc-typography--display1">Display1</h1>
+  <h1 class="mdc-typography--headline">Headline</h1>
+  <h1 class="mdc-typography--title">Title</h1>
+  <h1 class="mdc-typography--subheading2">Subheading2</h1>
+  <h1 class="mdc-typography--subheading1">Subheading1</h1>
+  <h1 class="mdc-typography--body2">Body2</h1>
+  <h1 class="mdc-typography--body1">Body1</h1>
+  <h1 class="mdc-typography--caption">Caption</h1>
+  <h1 class="mdc-typography--button">Button</h1>
 
-<i class="material-icons">help_outline</i>
+  <h1>
+    {{#mdc-button}}Button{{/mdc-button}}
+  </h1>
+  <h1>
+    {{#mdc-button isRipple=true}}Button{{/mdc-button}}
+  </h1>
+  <h1>
+    {{#mdc-button disabled=true}}Button{{/mdc-button}}
+  </h1>
 
-<button class="mdc-button">
-  <i class="material-icons mdc-button__icon">favorite</i>
-  Button
-</button>
+  <h1>
+    {{#mdc-button isRaised=true}}Button{{/mdc-button}}
+  </h1>
+  <h1>
+    {{#mdc-button isRaised=true isRipple=true}}Button{{/mdc-button}}
+  </h1>
+  <h1>
+    {{#mdc-button isRaised=true disabled=true}}Button{{/mdc-button}}
+  </h1>
+
+  <h1>
+    {{#mdc-button isRaised=true isCenter=true}}
+      <i class="material-icons">favorite</i>
+      Button
+    {{/mdc-button}}
+  </h1>
+  <h1>
+    {{#mdc-button isRaised=true isCenter=true isRipple=true}}
+      <i class="material-icons">favorite</i>
+      Button
+    {{/mdc-button}}
+  </h1>
+  <h1>
+    {{#mdc-button isRaised=true isCenter=true disabled=true}}
+      <i class="material-icons">favorite</i>
+      Button
+    {{/mdc-button}}
+  </h1>
+</main>

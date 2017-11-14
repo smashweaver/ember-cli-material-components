@@ -1,14 +1,16 @@
-$mdc-theme-primary: #9c27b0; // Purple 500
-$mdc-theme-secondary: #ffab40; // Orange A200
-
-@import '@material/theme/mdc-theme';
-
 @import '@material/typography/mdc-typography';
 
 @import '@material/toolbar/mdc-toolbar';
 
-@import '@material/drawer/mdc-drawer';
-
-@import '@material/layout-grid/mdc-layout-grid';
-
 @import '@material/button/mdc-button';
+
+@import '@material/ripple/mdc-ripple';
+
+@mixin align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.mdc-button--center {
+  @include align-items-center;
+}
