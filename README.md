@@ -1,26 +1,48 @@
 # ember-cli-material-components
 
-This README outlines the details of collaborating on this Ember addon.
+## ** THIS IS A WORK IN PROGRESS **
+
+This ember-cli addon facilitates the integration of google's [Material Components for the Web](https://material.io/components/web/catalog/) with ember-cli apps.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-material-components`
-* `npm install`
+* `ember install ember-cli-material-components`
 
-## Running
+## Run the blueprint
+* `ember g ember-cli-material-components`
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Available Components
 
-## Running Tests
+### Button
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+* Basic button
+```
+{{#mdc-button}}Button{{/mdc-button}}
+```
 
-## Building
+* Raised button
+```
+{{#mdc-button isRaised=true}}Button{{/mdc-button}}
+```
 
-* `ember build`
+* Disabled button
+```
+{{#mdc-button disabled=true}}Button{{/mdc-button}}
+```
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+* Ripple button
+```
+{{#mdc-button isRipple=true}}Button{{/mdc-button}}
+```
+
+### Toolbar
+
+```
+{{#mdc-toolbar}}
+  {{#mdc-toolbar-row}}
+    {{#mdc-toolbar-section}}
+      {{#mdc-toolbar-title}}Title{{/mdc-toolbar-title}}
+    {{/mdc-toolbar-section}}
+  {{/mdc-toolbar-row}}
+{{/mdc-toolbar}}
+```
