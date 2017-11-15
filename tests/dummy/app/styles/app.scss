@@ -1,8 +1,11 @@
+@import 'roboto-fonts';
+@import 'material-icons';
+
 $mdc-theme-primary: orange;
 $mdc-theme-secondary: black;
 $mdc-theme-background: #fff;
 
-@import '@material/theme/mdc-theme';
+@import 'ember-cli-material-components';
 
 body {
   padding: 0;
