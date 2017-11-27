@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-import { MDCFoundation } from '../base';
+import MDCFoundation from '../base/foundation';
 import MDCRippleAdapter from './adapter';
-import { cssClasses, strings, numbers } from './constants';
-import { getNormalizedEventCoords } from './util';
+import {cssClasses, strings, numbers} from './constants';
+import {getNormalizedEventCoords} from './util';
 
 /**
  * @typedef {!{

@@ -140,4 +140,4 @@ function getCorrectPropertyName(windowObj, eventType) {
   return getAnimationName(windowObj, eventType);
 }
 
-export { transformStyleProperties, getCorrectEventName, getCorrectPropertyName };
+export {transformStyleProperties, getCorrectEventName, getCorrectPropertyName};

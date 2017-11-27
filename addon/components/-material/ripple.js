@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import { MDCComponent } from './base';
+import MDCComponent from './base/component';
 import MDCRippleAdapter from './ripple/adapter';
 import MDCRippleFoundation from './ripple/foundation';
 import * as util from './ripple/util';
@@ -135,4 +135,4 @@ RippleCapableSurface.prototype.unbounded;
  */
 RippleCapableSurface.prototype.disabled;
 
-export { MDCRipple, MDCRippleFoundation, MDCRippleAdapter, util };
+export {MDCRipple, MDCRippleFoundation, util};

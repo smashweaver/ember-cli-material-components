@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import { MDCComponent } from './base';
+import {MDCComponent} from './base';
 
 import MDCToolbarFoundation from './toolbar/foundation';
 import * as util from './toolbar/util';
 
-export { MDCToolbarFoundation };
-export { util };
+export {MDCToolbarFoundation};
+export {util};
 
 export class MDCToolbar extends MDCComponent {
   static attachTo(root) {

@@ -43,4 +43,4 @@ const numbers = {
   FG_DEACTIVATION_MS: 83,
 };
 
-export { cssClasses, strings, numbers };
+export {cssClasses, strings, numbers};

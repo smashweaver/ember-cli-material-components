@@ -1,12 +1,12 @@
 /**
  * @license
- * Copyright 2016 Google Inc.
+ * Copyright 2017 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
+ *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,7 +15,14 @@
  * limitations under the License.
  */
 
-import MDCFoundation from './base/foundation';
-import MDCComponent from './base/component';
+/** @enum {string} */
+const cssClasses = {
+  ROOT: 'mdc-form-field',
+};
 
-export {MDCFoundation, MDCComponent};
+/** @enum {string} */
+const strings = {
+  LABEL_SELECTOR: '.mdc-form-field > label',
+};
+
+export {cssClasses, strings};

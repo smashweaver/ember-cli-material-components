@@ -138,4 +138,4 @@ function getNormalizedEventCoords(ev, pageOffset, clientRect) {
   return {x: normalizedX, y: normalizedY};
 }
 
-export { supportsCssVariables, applyPassive, getMatchesProperty, getNormalizedEventCoords };
+export {supportsCssVariables, applyPassive, getMatchesProperty, getNormalizedEventCoords};
