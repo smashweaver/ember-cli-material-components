@@ -8,7 +8,7 @@ const MergeTrees = require('broccoli-merge-trees');
 module.exports = {
   name: 'ember-cli-material-components',
 
-  included(app) {
+  included() {
     this._super.included.apply(this, arguments);
   }
 };

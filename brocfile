@@ -1,6 +1,5 @@
 const funnel = require('broccoli-funnel');
 const merge = require('broccoli-merge-trees');
-
 const AwkFilter = require('./awk-filter');
 
 const modules = [
@@ -30,11 +29,8 @@ function makeNode(module) {
   let tree = funnel(`./node_modules/@material/${module}`, {
     include: ['*.js'],
     exclude: ['index.js'],
-   
     destDir: `/${module}`,
   });
-
-  //tree = new AwkFilter(tree, `'\.\/`, `'\.\.\/${module}\/`);
   tree = new AwkFilter(tree, `'@material\/`, `'\.\.\/`);
 
   return tree;
@@ -43,23 +39,18 @@ function makeNode(module) {
 function makeIndexNode(module) {
   let tree = funnel(`./node_modules/@material/${module}`, {
     include: ['index.js'],
-
     destDir: `/`,
-
     getDestinationPath: function(relativePath) {
       return `/${module}.js` ;
     }
   });
-
   tree = new AwkFilter(tree, `'\.\/`, `'\.\/${module}\/`);
   tree = new AwkFilter(tree, `'@material\/`, `'\.\/`);
-  
+
   return tree;
 }
 
 const tree = modules.map(src => makeNode(src));
-
 const indexTree = modules.map(src => makeIndexNode(src));
 
 module.exports = merge([...tree, ...indexTree]);
-

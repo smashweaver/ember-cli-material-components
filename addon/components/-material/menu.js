@@ -16,5 +16,5 @@
  */
 
 import * as util from './menu/util';
-import {MDCSimpleMenu, MDCSimpleMenuFoundation} from './menu/simple';
-export {MDCSimpleMenu, MDCSimpleMenuFoundation, util};
+import {MDCSimpleMenu, MDCSimpleMenuFoundation, CornerBit, Corner, AnchorMargin} from './menu/simple';
+export {MDCSimpleMenu, MDCSimpleMenuFoundation, CornerBit, Corner, AnchorMargin, util};

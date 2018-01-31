@@ -25,7 +25,8 @@
     "ember-cli-babel": "^6.6.0",
     "ember-cli-htmlbars": "^2.0.3",
     "ember-cli-sass": "^7.0.0",
-    "material-components-web": "^0.25.0"
+    "ember-truth-helpers": "^2.0.0",
+    "material-components-web": "^0.29.0"
   },
   "devDependencies": {
     "broccoli": "^1.1.4",
@@ -43,6 +44,7 @@
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
+    "ember-code-snippet": "^2.0.0",
     "ember-disable-prototype-extensions": "^1.1.2",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",

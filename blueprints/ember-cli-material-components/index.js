@@ -7,10 +7,10 @@ module.exports = {
       packages: [
         { name: 'ember-cli-sass' }
       ]
-    });
+    })
     .then(() => {
       return this.addPackagesToProject([
-        { name: 'material-components-web', target: '^0.25.0' }
+        { name: 'material-components-web', target: '^0.29.0' }
       ]);
     });
   }
